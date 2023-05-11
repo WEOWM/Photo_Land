@@ -1,0 +1,28 @@
+.product-card{
+    width: 20rem;
+    background-color: #111;
+    
+}
+
+.pro-badge-body{
+    margin: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pro-badge{
+    width: 4rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #ffc107;
+}
+
+.pro-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

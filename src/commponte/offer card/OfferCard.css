@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+.card {
+  height: 15rem;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 1rem;
+  background-color: #111;
+  font-family: 'Kanit', sans-serif;
+}
+.btn-primary {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: unset !important;
+  --bs-btn-border-color: unset !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: unset !important;
+  --bs-btn-hover-border-color: unset !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: unset !important;
+  --bs-btn-active-border-color: unset !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: unset !important;
+  --bs-btn-disabled-border-color: unset !important;
+  
+}
