@@ -19,7 +19,6 @@ import data from "../../util/data";
 //     mobile: {
 //       breakpoint: { max: 464, min: 0 },
 //       items: 1,
-//       slidesToSlide: 1, // optional, default to 1.
 //     },
 //   };
 //   return (
@@ -32,8 +31,8 @@ import data from "../../util/data";
 //         infinite={true}
 //         autoPlaySpeed={1000}
 //         keyBoardControl={true}
-//         customTransition="all .5"
-//         transitionDuration={500}
+//         customTransition="all 1.9"
+//         transitionDuration={1000}
 //         containerClass="carousel-container"
 //         dotListClass="custom-dot-list-style"
 //         itemClass="carousel-item-padding-40-px"
@@ -49,21 +48,38 @@ import data from "../../util/data";
 
 // export default CategoryCarousel;
 
-import React from "react";
-import { Carousel, Row } from "react-bootstrap";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const CategoryCarousel = () => {
+  const settings = {
+    className: "center",
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 4,
+    swipeToSlide: true,
+    afterChange: function (index) {
+      console.log(
+        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+      );
+    },
+  };
+
   return (
-    <Carousel>
-      {/* reuse card */}
-      {data.map((item, idx) => {
-        return (
-          <Carousel.Item>
-            <ProductCard productData={item} key={idx} />;
-          </Carousel.Item>
-        );
-      })}
-    </Carousel>
+    <div className=" me-5" style={{padding:"4rem",overflow:"hidden"}}  >
+      <Slider {...settings}>
+        {/* reuse card */}
+        {data.map((item, idx) => {
+          return (
+            <div>
+              <ProductCard productData={item} key={idx} />
+            </div>
+          );
+        })}
+      </Slider>
+    </div>
   );
 };
 

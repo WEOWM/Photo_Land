@@ -36,9 +36,11 @@ function App() {
         </Col>
       </Row>
 
-      <Row>
-        <h3 style={{color:'#fff',paddingLeft:"2rem"}}>Latest Products</h3>
-        <CategoryCarousel/>
+      <Row style={{ marginRight: "0", paddingRight: "0" }}>
+        <h3 style={{ color: "#fff", paddingLeft: "2rem" }}>Latest Products</h3>
+        
+          <CategoryCarousel />
+       
       </Row>
     </div>
   );
