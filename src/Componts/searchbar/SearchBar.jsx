@@ -1,7 +1,7 @@
 import React from 'react'
-import './input.css'
+import './SearchBar.css'
 import { BsSearch } from "react-icons/bs";
-function Input(props) {
+function SearchBar (props) {
   return (
     <div className="searchbar" >
     <input
@@ -11,11 +11,12 @@ function Input(props) {
       // onChange={(e)=>props.onChange(e)}
       className="searchbar__input"
     />
-    <button placeholder={props.placeholder} onClick={props.handleSubmit} type="submit" className="searchbar__button">
-      <BsSearch className="text-dark" />
+    <button onClick={props.handleSubmit} type="submit" className="searchbar__button">
+      
+      {props.width === "100px" ? <p className='m-0 p-0'>Join</p> : <BsSearch className="text-dark"  /> }
     </button>
   </div>
   )
 }
 
-export default Input
+export default SearchBar

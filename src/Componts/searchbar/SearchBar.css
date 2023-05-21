@@ -4,9 +4,9 @@
     display: inline-flex;
 }
 
-.searchbar--max-width {
+/* .searchbar--max-width {
     max-width: 100%;
-}
+} */
 
 .searchbar__input {
     flex-grow: 1;

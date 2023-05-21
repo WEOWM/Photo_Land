@@ -1,0 +1,15 @@
+.side_bar{
+    width: 100%;
+    height: 56vh;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    
+
+}
+.sidebar_list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 3rem;
+}
