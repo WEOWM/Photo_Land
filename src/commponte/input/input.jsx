@@ -11,7 +11,7 @@ function Input(props) {
       // onChange={(e)=>props.onChange(e)}
       className="searchbar__input"
     />
-    <button onClick={props.handleSubmit} type="submit" className="searchbar__button">
+    <button placeholder={props.placeholder} onClick={props.handleSubmit} type="submit" className="searchbar__button">
       <BsSearch className="text-dark" />
     </button>
   </div>

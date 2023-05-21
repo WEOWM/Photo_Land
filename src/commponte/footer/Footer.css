@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111;
+}
+.foot-head{
+    align-items: center;
+    
+  
+}
+.footer-copywrite{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}

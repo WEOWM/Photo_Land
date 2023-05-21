@@ -6,6 +6,7 @@ import { Col, Row } from "react-bootstrap";
 import CustomCarousel from "./commponte/Carousel/Carousel";
 import OfferCard from "./commponte/offer card/OfferCard";
 import CategoryCarousel from "./commponte/Carousel/CategoryCarousel";
+import Footer from "./commponte/footer/Footer";
 
 function App() {
   const data = [
@@ -42,6 +43,7 @@ function App() {
           <CategoryCarousel />
        
       </Row>
+      <Footer/>
     </div>
   );
 }
